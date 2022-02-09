@@ -11,23 +11,26 @@
 
 <body>
     <div class="content container-fluid col-md-6 mt-5">
-        <div class="mb-3 ">
-            <label for="email">Correo</label>
-            <input type="text" id="email" name="email" placeholder="Ingresa tu correo" class="form-control">
-        </div>
-        <div class="mb-3 ">
-            <label for="password">Contraseña</label>
-            <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" class="form-control">
-        </div>
-        <div class="mb-3  d-flex justify-content-end">
-            <button type="submit" class="btn btn-primary mb-3">Iniciar Sesión</button>
-        </div>
+        <form id="form_login">
+            <div class="mb-3 ">
+                <label for="email">Correo</label>
+                <input type="text" id="email" name="email" placeholder="Ingresa tu correo" class="form-control">
+            </div>
+            <div class="mb-3 ">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" class="form-control">
+            </div>
+            <div class="mb-3  d-flex justify-content-end">
+                <button type="button" class="btn btn-primary mb-3" onclick="login()">Iniciar Sesión</button>
+            </div>
 
-        <div class="row text-center">
-            <a href="register.php">¿Aún no tienes cuenta? ¡Registrate ahora!</a>
-            <a href="forgot_password.php">¿Olvidaste tu contraseña? ¡Recuperala aquí!</a>
-        </div>
+            <div class="row text-center">
+                <a href="register.php">¿Aún no tienes cuenta? ¡Registrate ahora!</a>
+                <a href="forgot_password.php">¿Olvidaste tu contraseña? ¡Recuperala aquí!</a>
+            </div>
+        </form>
     </div>
+    <script src="../js/login.js"></script>
 
 </body>
 
